@@ -1,0 +1,16 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
+}
+
+.container--indention {
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.container--show {
+  display: flex;
+  justify-content: space-between;
+}

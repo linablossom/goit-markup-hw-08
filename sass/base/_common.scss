@@ -1,0 +1,43 @@
+body {
+  color: var(--primary-text-color);
+  background-color: var(--main-title-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.unmarked-list {
+  list-style: none;
+}
+
+.undecorated-link {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section--no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.section--bg-color {
+  background-color: var(--background-color);
+}

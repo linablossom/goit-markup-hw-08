@@ -1,0 +1,28 @@
+.address-container {
+  display: flex;
+  flex-direction: column;
+
+  &__address {
+    margin-bottom: 9px;
+
+    color: var(--main-title-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  &__contacts {
+    display: inline-block;
+    color: var(--contacts-color);
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+}
