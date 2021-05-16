@@ -8,7 +8,7 @@
   }
 
   @include breakpoint($mobile) {
-    width: $mobile;
+    max-width: $mobile;
   }
 
   @include breakpoint($tablet) {
