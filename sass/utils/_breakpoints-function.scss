@@ -1,0 +1,24 @@
+$mobile-start: 280px;
+$mobile: 480px;
+$mobile-end: 767px;
+$tablet: 768px;
+$tablet-end: 1199px;
+$desktop: 1200px;
+
+@mixin breakpoint($min-width) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin breakpoint-max($max-width) {
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin breakpoint-section($min-width, $max-width) {
+  @media screen and (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}

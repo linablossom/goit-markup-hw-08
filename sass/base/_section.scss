@@ -1,0 +1,23 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &--bg-color {
+    background-color: var(--background-color);
+  }
+
+  @include breakpoint-max($tablet-end) {
+    &--display-none {
+      display: none;
+    }
+  }
+
+  @include breakpoint($desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &--no-padding-bottom {
+      padding-bottom: 0;
+    }
+  }
+}

@@ -1,7 +1,11 @@
 @import "./utils/variables";
+@import "./utils/breakpoints-function";
+@import "./utils/flex-center";
+@import "./utils/line-height";
 @import "./utils/visually-hidden";
 @import "./base/common";
 @import "./base/container";
+@import "./base/section";
 @import "./base/title";
 @import "./components/logo";
 @import "./components/backdrop";

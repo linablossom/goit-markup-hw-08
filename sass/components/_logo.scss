@@ -1,9 +1,8 @@
 .logo {
-  margin-right: 93px;
-
   font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  @include lineheight(28px, 24px);
+
   color: var(--accent-color);
 
   &--light-theme {
@@ -17,5 +16,20 @@
   &--bottom-gap {
     display: inline-block;
     margin-bottom: 20px;
+  }
+
+  @include breakpoint($tablet) {
+    &--margin-right {
+      margin-right: 88px;
+    }
+  }
+
+  @include breakpoint($desktop) {
+    &--margin-right {
+      margin-right: 93px;
+    }
+
+    font-size: 26px;
+    line-height: 1.19;
   }
 }

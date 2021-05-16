@@ -1,16 +1,31 @@
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 1200px;
-}
 
-.container--indention {
-  margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
+  &--indention {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 
-.container--show {
-  display: flex;
-  justify-content: space-between;
+  @include breakpoint($mobile) {
+    width: $mobile;
+  }
+
+  @include breakpoint($tablet) {
+    width: $tablet;
+  }
+
+  @include breakpoint($desktop) {
+    width: $desktop;
+
+    &--indention {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+
+    &--show {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }

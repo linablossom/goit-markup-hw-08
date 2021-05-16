@@ -23,7 +23,10 @@
         <!-- navigation -->
 
         <nav class="site-nav">
-          <a href="./index.html" class="logo undecorated-link">
+          <a
+            href="./index.html"
+            class="logo logo--margin-right undecorated-link"
+          >
             Web<span class="logo--light-theme">Studio</span>
           </a>
           <ul class="site-nav__list unmarked-list">
@@ -262,20 +265,50 @@
 
       <!-- activities -->
 
-      <section class="section">
+      <section class="section section--display-none">
         <div class="container">
-          <h2 class="title">Чем мы занимаемся</h2>
+          <h2 class="title title--display-none">Чем мы занимаемся</h2>
           <ul class="activities-list unmarked-list">
             <li class="activities-list__item">
-              <img src="./img/desktop-apps.jpg" alt="" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/activities/desktop-apps-desktop.jpg    1x,
+                    ./img/activities/desktop-apps-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/activities/desktop-apps-desktop.jpg" alt="" />
+              </picture>
               <p class="activities-list__subtitle">Десктопные приложения</p>
             </li>
             <li class="activities-list__item">
-              <img src="./img/phone-apps.jpg" alt="" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/activities/mobile-apps-desktop.jpg    1x,
+                    ./img/activities/mobile-apps-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/activities/mobile-apps-desktop.jpg" alt="" />
+              </picture>
               <p class="activities-list__subtitle">Мобильные приложения</p>
             </li>
             <li class="activities-list__item">
-              <img src="./img/design-solutions.jpg" alt="" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/activities/design-solutions-desktop.jpg    1x,
+                    ./img/activities/design-solutions-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/activities/design-solutions-desktop.jpg"
+                  alt=""
+                />
+              </picture>
               <p class="activities-list__subtitle">Дизайнерские решения</p>
             </li>
           </ul>
@@ -290,11 +323,33 @@
           <ul class="team-list unmarked-list">
             <!-- card 1 -->
             <li class="team-list__item">
-              <img
-                src="./img/employee-01.jpg"
-                alt="Мужчина-сотрудник компании"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/employee-01-desktop.jpg    1x,
+                    ./img/team/employee-01-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/employee-01-tablet.jpg    1x,
+                    ./img/team/employee-01-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/employee-01-mobile.jpg    1x,
+                    ./img/team/employee-01-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 208px)"
+                />
+                <img
+                  src="./img/team/employee-01-desktop.jpg"
+                  alt="Мужчина-сотрудник компании"
+                />
+              </picture>
               <div class="team-list__inform-container">
                 <h3 class="subtitle team-list__name">Игорь Демьяненко</h3>
                 <p class="team-list__specialty">Product Designer</p>
@@ -333,11 +388,33 @@
 
             <!-- card 2 -->
             <li class="team-list__item">
-              <img
-                src="./img/employee-02.jpg"
-                alt="Женщина-сотрудник компании"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/employee-02-desktop.jpg    1x,
+                    ./img/team/employee-02-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/employee-02-tablet.jpg    1x,
+                    ./img/team/employee-02-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/employee-02-mobile.jpg    1x,
+                    ./img/team/employee-02-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 208px)"
+                />
+                <img
+                  src="./img/team/employee-02-desktop.jpg"
+                  alt="Женщина-сотрудник компании"
+                />
+              </picture>
               <div class="team-list__inform-container">
                 <h3 class="subtitle team-list__name">Ольга Репина</h3>
                 <p class="team-list__specialty">Frontend Developer</p>
@@ -376,11 +453,33 @@
 
             <!-- card 3 -->
             <li class="team-list__item">
-              <img
-                src="./img/employee-03.jpg"
-                alt="Мужчина-сотрудник компании"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/employee-03-desktop.jpg    1x,
+                    ./img/team/employee-03-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/employee-03-tablet.jpg    1x,
+                    ./img/team/employee-03-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/employee-03-mobile.jpg    1x,
+                    ./img/team/employee-03-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 208px)"
+                />
+                <img
+                  src="./img/team/employee-03-desktop.jpg"
+                  alt="Мужчина-сотрудник компании"
+                />
+              </picture>
               <div class="team-list__inform-container">
                 <h3 class="subtitle team-list__name">Николай Тарасов</h3>
                 <p class="team-list__specialty">Marketing</p>
@@ -419,11 +518,33 @@
 
             <!-- card 4 -->
             <li class="team-list__item">
-              <img
-                src="./img/employee-04.jpg"
-                alt="Мужчина-сотрудник компании"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/employee-04-desktop.jpg    1x,
+                    ./img/team/employee-04-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/employee-04-tablet.jpg    1x,
+                    ./img/team/employee-04-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/employee-04-mobile.jpg    1x,
+                    ./img/team/employee-04-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 208px)"
+                />
+                <img
+                  src="./img/team/employee-04-desktop.jpg"
+                  alt="Мужчина-сотрудник компании"
+                />
+              </picture>
               <div class="team-list__inform-container">
                 <h3 class="subtitle team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__specialty">UI Designer</p>
@@ -587,7 +708,6 @@
             </li>
           </ul>
         </div>
-        <!-- </div> -->
         <div class="footer__subscribe-container">
           <span class="footer__subtitle">Подпишитесь на рассылку</span>
           <form class="subscribe-form" action="#">

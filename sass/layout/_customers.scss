@@ -5,7 +5,7 @@
   margin-left: calc(-1 * var(--projects-item-gap));
 
   &__item {
-    flex-basis: calc((100% - 180px) / 6);
+    flex-basis: calc((100% - 60px) / 2);
     margin-top: var(--projects-item-gap);
     margin-left: var(--projects-item-gap);
     width: 100%;
@@ -13,9 +13,7 @@
   }
 
   &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     width: 100%;
     height: 100%;
 
@@ -41,6 +39,18 @@
     .customers-list__link:hover &,
     .customers-list__link:focus & {
       fill: var(--accent-color);
+    }
+  }
+
+  @include breakpoint($tablet) {
+    &__item {
+      flex-basis: calc((100% - 90px) / 3);
+    }
+  }
+
+  @include breakpoint($desktop) {
+    &__item {
+      flex-basis: calc((100% - 180px) / 6);
     }
   }
 }

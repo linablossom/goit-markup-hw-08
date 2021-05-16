@@ -25,4 +25,8 @@
       margin-bottom: 9px;
     }
   }
+
+  @include breakpoint-max($tablet-end) {
+    align-items: center;
+  }
 }
