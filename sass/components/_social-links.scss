@@ -44,4 +44,8 @@
 
     transition: fill 250ms var(--animation-timing-function);
   }
+
+  @include breakpoint-max($tablet-end) {
+    justify-content: center;
+  }
 }

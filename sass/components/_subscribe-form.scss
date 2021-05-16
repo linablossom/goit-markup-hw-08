@@ -20,7 +20,6 @@
   }
 
   &__input {
-    margin-right: 12px;
     padding: 15px 16px;
     flex-grow: 1;
     height: 50px;
@@ -67,5 +66,25 @@
     width: 24px;
     height: 24px;
     fill: var(--main-title-color);
+  }
+
+  @include breakpoint-max($tablet-end) {
+    flex-direction: column;
+    align-items: center;
+
+    &__button {
+      max-width: 200px;
+    }
+
+    &__input {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  @include breakpoint($desktop) {
+    &__input {
+      margin-right: 12px;
+    }
   }
 }

@@ -17,7 +17,6 @@
 
   @include breakpoint($desktop) {
     width: $desktop;
-
     &--indention {
       padding-top: 200px;
       padding-bottom: 200px;
