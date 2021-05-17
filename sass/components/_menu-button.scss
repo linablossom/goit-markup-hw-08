@@ -12,6 +12,13 @@
   &__icon {
     width: 40px;
     height: 40px;
+
+    transition: fill 250ms var(--animation-timing-function);
+
+    .open-menu__btn:hover &,
+    .open-menu__btn:focus & {
+      fill: var(--accent-color);
+    }
   }
 
   @include breakpoint($tablet) {

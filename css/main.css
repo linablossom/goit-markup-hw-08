@@ -218,6 +218,12 @@ ul {
 .open-menu__icon {
   width: 40px;
   height: 40px;
+  transition: fill 250ms var(--animation-timing-function);
+}
+
+.open-menu__btn:hover .open-menu__icon,
+.open-menu__btn:focus .open-menu__icon {
+  fill: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
