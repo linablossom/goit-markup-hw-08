@@ -82,6 +82,11 @@
     }
   }
 
+  @include breakpoint-section($tablet, $tablet-end) {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
   @include breakpoint($desktop) {
     &__input {
       margin-right: 12px;
