@@ -198,6 +198,12 @@ ul {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 767px) {
+  .backdrop {
+    z-index: 1;
+  }
+}
+
 .open-menu__btn {
   padding: 0;
   width: 40px;

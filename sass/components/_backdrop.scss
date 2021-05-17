@@ -16,4 +16,8 @@
     pointer-events: none;
     transform: scale(1.1);
   }
+
+  @include breakpoint-max($mobile-end) {
+    z-index: 1;
+  }
 }
