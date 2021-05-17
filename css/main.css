@@ -462,7 +462,6 @@ ul {
 
 .form-checkbox__container {
   display: inline-block;
-  margin-bottom: 30px;
   position: relative;
   cursor: pointer;
 }
@@ -504,6 +503,7 @@ ul {
 .form-button-container {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .form-button {
