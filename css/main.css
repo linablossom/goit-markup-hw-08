@@ -199,6 +199,12 @@ ul {
   transform: scale(1.1);
 }
 
+@media screen and (min-width: 768px) {
+  .backdrop {
+    display: none;
+  }
+}
+
 .open-menu__btn {
   padding: 0;
   width: 40px;
