@@ -3,6 +3,10 @@
   top: 0;
   right: 0;
 
+  display: flex;
+  flex-direction: column;
+
+  padding: 48px 40px;
   width: 480px;
   height: 796px;
 
@@ -42,6 +46,10 @@
     .menu__close-button:focus & {
       fill: var(--accent-color);
     }
+  }
+
+  &__contacts-container {
+    margin-top: auto;
   }
 
   @include breakpoint($tablet) {

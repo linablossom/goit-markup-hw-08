@@ -13,53 +13,93 @@
 }
 
 .link {
-  @include breakpoint($tablet) {
-    padding: 32.5px 0;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  padding: 32.5px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
-    transition: color 250ms var(--animation-timing-function);
+  transition: color 250ms var(--animation-timing-function);
 
-    &:hover,
-    &:focus {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  @include breakpoint-max($mobile-end) {
+    padding: 0;
+
+    &--mobile-nav {
+      font-size: 40px;
+      @include lineheight(47, 40);
+
+      color: var(--title-text-color);
+    }
+
+    &--mobile-phone {
+      font-weight: 500;
+      font-size: 34px;
+      @include lineheight(34, 40);
+    }
+
+    &--mobile-email {
+      font-size: 24px;
+      @include lineheight(28, 24);
+    }
+
+    &--mobile-social {
+      font-size: 18px;
+      @include lineheight(22, 18);
       color: var(--accent-color);
     }
   }
 }
 
 .site-nav {
-  @include breakpoint-max($mobile-end) {
+  display: flex;
+  align-items: center;
+
+  &__list {
     display: flex;
-    align-items: center;
+  }
+
+  &__link {
+    color: var(--title-text-color);
+  }
+
+  &--current {
+    color: var(--accent-color);
+  }
+
+  @include breakpoint-max($mobile-end) {
     justify-content: space-between;
     width: 100%;
 
     &__list {
       display: none;
     }
+
+    &__list--mobile {
+      display: block;
+    }
+
+    &__item {
+      & + & {
+        margin-top: 32px;
+      }
+    }
   }
 
   @include breakpoint($tablet) {
-    display: flex;
-    align-items: center;
-
-    &__list {
-      display: flex;
-    }
-
     &__item + &__item {
       margin-left: 50px;
     }
 
     &__link {
       display: inline-block;
-      color: var(--title-text-color);
     }
 
     &--current {
-      color: var(--accent-color);
       position: relative;
 
       &::after {
@@ -78,8 +118,23 @@
 }
 
 .contacts-list {
+  &__link {
+    color: var(--primary-text-color);
+  }
+
   @include breakpoint-max($mobile-end) {
     display: none;
+
+    &__item {
+      & + & {
+        margin-top: 32px;
+      }
+    }
+
+    &--mobile {
+      display: block;
+      margin-bottom: 64px;
+    }
   }
 
   @include breakpoint($tablet) {
