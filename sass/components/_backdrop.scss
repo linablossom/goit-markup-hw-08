@@ -20,6 +20,8 @@
   }
 
   @include breakpoint($tablet) {
-    display: none;
+    &--hidden {
+      display: none;
+    }
   }
 }

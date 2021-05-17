@@ -200,7 +200,7 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  .backdrop {
+  .backdrop--hidden {
     display: none;
   }
 }
