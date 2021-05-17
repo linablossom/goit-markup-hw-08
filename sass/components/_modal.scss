@@ -10,8 +10,6 @@
 
   background-color: var(--main-title-color);
 
-  overflow-y: scroll;
-
   transform: translate(-50%, -50%) scale(1);
   transition: all 250ms var(--animation-timing-function),
     opacity 250ms var(--animation-timing-function);
@@ -51,5 +49,6 @@
   @include breakpoint($desktop) {
     max-width: 528px;
     max-height: 583px;
+    overflow: auto;
   }
 }
