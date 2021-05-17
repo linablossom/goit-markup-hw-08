@@ -1,3 +1,29 @@
 .social-mobile {
   display: flex;
+  flex-wrap: wrap;
+
+  margin-top: -10px;
+  margin-left: -10px;
+
+  &__item {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    & + &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -10px;
+      width: 1px;
+      height: 100%;
+      background-color: rgba(33, 33, 33, 0.2);
+    }
+  }
+
+  &__link {
+    display: inline-block;
+  }
 }
