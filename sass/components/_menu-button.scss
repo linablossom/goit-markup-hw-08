@@ -1,4 +1,14 @@
-.menu-open {
+.open-menu {
+  &__btn {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    @include flex-center;
+
+    border: 0;
+    background-color: inherit;
+  }
+
   &__icon {
     width: 40px;
     height: 40px;

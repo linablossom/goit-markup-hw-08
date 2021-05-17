@@ -12,6 +12,9 @@
   }
 
   &__link {
+    display: flex;
+    flex-direction: column;
+
     color: inherit;
 
     transition: box-shadow 250ms var(--animation-timing-function);
@@ -76,6 +79,7 @@
   }
 
   &__content {
+    flex-grow: 1;
     padding: 20px 24px;
 
     border-right: 1px solid #eeeeee;
