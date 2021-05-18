@@ -1327,6 +1327,14 @@ ul {
   line-height: 1.87;
 }
 
+@media screen and (max-width: 399px) {
+  .projects__inform-text {
+    top: 0;
+    padding: 16px;
+    font-size: 16px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .projects__item {
     flex-basis: calc((100% - 60px) / 2);

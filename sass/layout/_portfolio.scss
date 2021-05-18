@@ -100,6 +100,14 @@
     line-height: 1.87;
   }
 
+  @media screen and (max-width: 399px) {
+    &__inform-text {
+      top: 0;
+      padding: 16px;
+      font-size: 16px;
+    }
+  }
+
   @include breakpoint($tablet) {
     &__item {
       flex-basis: calc((100% - 60px) / 2);
